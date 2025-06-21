@@ -39,16 +39,6 @@ export default function Home() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const openLightbox = (index: number) => {
-    setLightboxIndex(index);
-    setLightboxOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-    setLightboxIndex(0);
-  };
-
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col font-sans">
       {/* Hero Section */}
@@ -301,17 +291,17 @@ export default function Home() {
           </h2>
           <div className="space-y-6">
             <blockquote className="border-l-4 border-blue-700 pl-4 italic text-gray-800">
-              "Neha Enterprises delivered our automation project on time and
-              exceeded our expectations. Highly recommended!"
+              &quot;Neha Enterprises delivered our automation project on time and
+              exceeded our expectations. Highly recommended!&quot;
               <div className="mt-2 text-blue-900 font-semibold">
                 - Manufacturing Client
               </div>
             </blockquote>
             <blockquote className="border-l-4 border-blue-700 pl-4 italic text-gray-800">
-              "Professional team with deep technical expertise. Our production
-              efficiency improved significantly."
+              &quot;Professional team with deep technical expertise. Our
+              production efficiency improved significantly.&quot;
               <div className="mt-2 text-blue-900 font-semibold">
-                - Food & Beverage Industry
+                - Food &amp; Beverage Industry
               </div>
             </blockquote>
           </div>
